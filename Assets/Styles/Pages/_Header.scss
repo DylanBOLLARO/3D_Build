@@ -1,0 +1,63 @@
+header {
+  background: #222;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #f5deb3;
+    margin: 0 5px;
+    background: red;
+    &:hover {
+      background: whitesmoke;
+    }
+  }
+  .search {
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #f5deb3;
+    background: transparent;
+    padding-left: 10px;
+    color: #f5deb3;
+  }
+  .left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    #menu {
+      background: no-repeat url("../../Imgs/menu.png") center/contain;
+      background-size: 80%;
+    }
+    #prev {
+      background: no-repeat url("../../Imgs/left.png") center/contain;
+      background-size: 80%;
+    }
+    #next {
+      background: no-repeat url("../../Imgs/right.png") center/contain;
+      background-size: 80%;
+    }
+  }
+  .midle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    #home {
+      background: no-repeat url("../../Imgs/home.png") center/contain;
+      background-size: 80%;
+    }
+  }
+  .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    #login {
+      background: no-repeat url("../../Imgs/user.png") center/contain;
+      background-size: 80%;
+    }
+  }
+}

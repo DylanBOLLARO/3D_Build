@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: black;
+  height: 100vh;
+  min-height: 350px;
+  overflow: hidden;
+}
+
+header {
+  background: #222;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #f5deb3;
+  margin: 0 5px;
+  background: red;
+}
+header .btn:hover {
+  background: whitesmoke;
+}
+header .search {
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #f5deb3;
+  background: transparent;
+  padding-left: 10px;
+  color: #f5deb3;
+}
+header .left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .left #menu {
+  background: no-repeat url("../../Imgs/menu.png") center/contain;
+  background-size: 80%;
+}
+header .left #prev {
+  background: no-repeat url("../../Imgs/left.png") center/contain;
+  background-size: 80%;
+}
+header .left #next {
+  background: no-repeat url("../../Imgs/right.png") center/contain;
+  background-size: 80%;
+}
+header .midle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .midle #home {
+  background: no-repeat url("../../Imgs/home.png") center/contain;
+  background-size: 80%;
+}
+header .right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .right #login {
+  background: no-repeat url("../../Imgs/user.png") center/contain;
+  background-size: 80%;
+}
+
+.app {
+  height: calc(100vh - 125px);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 15% 85%;
+}
+.app .select {
+  background: #222;
+  height: auto;
+  margin: 5px;
+  border-radius: 10px;
+}
+.app .select .buildList .card {
+  height: 50px;
+  width: 90%;
+  background: rgba(245, 245, 245, 0.393);
+  margin: 5px;
+  border-radius: 6px;
+  text-align: left;
+  padding-left: 5px;
+  transition: 0.3s;
+}
+.app .select .buildList .card:hover {
+  background: antiquewhite;
+}
+.app .mainView {
+  background: #222;
+  height: auto;
+  margin: 5px;
+  border-radius: 10px;
+  color: wheat;
+  padding: 20px;
+}
+
+footer {
+  height: 75px;
+  width: 100%;
+  background-color: #222;
+  position: fixed;
+  bottom: 0px;
+}/*# sourceMappingURL=index.css.map */

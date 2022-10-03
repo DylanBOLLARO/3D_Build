@@ -1,0 +1,39 @@
+.app {
+  height: calc(100vh - 125px);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 15% 85%;
+
+  .select {
+    background: #222;
+    height: auto;
+    margin: 5px;
+    border-radius: 10px;
+
+    .buildList {
+      .card {
+        height: 50px;
+        width: 90%;
+        background: rgba(245, 245, 245, 0.393);
+        margin: 5px;
+        border-radius: 6px;
+        text-align: left;
+        padding-left: 5px;
+        transition: 0.3s;
+
+        &:hover {
+          background: antiquewhite;
+        }
+      }
+    }
+  }
+
+  .mainView {
+    background: #222;
+    height: auto;
+    margin: 5px;
+    border-radius: 10px;
+    color: wheat;
+    padding: 20px;
+  }
+}

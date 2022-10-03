@@ -1,0 +1,19 @@
+[
+    {
+        "Name": "Battlecruiser & Hellion",
+        "BO":   [[[12],["VCS"]]
+                ,[[14],["Dépot"]]
+                ,[[15],["Caserne"]]]
+    },
+    {   
+        "Name": "Proxy 3 RAX Reaper",
+        "BO": 18
+    },    {
+        "Name": "Fast 3 CC",
+        "BO": 18
+    }
+    ,    {
+        "Name": "2-1-1 Marine Drop",
+        "BO": 18
+    }
+]
