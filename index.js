@@ -31,10 +31,23 @@ async function getBuildOrderJSON() {
         if (element.id === dataJSON[i].Name) {
           console.log(dataJSON[i].Name);
           mainView.innerHTML = `
-                                <div>${element.id}</div>
-                                <div>${dataJSON[i].BO}</div>
+                                <h1 style="margin-bottom:20px">${element.id}</h1>
                               `;
+          // console.log(dataJSON[i].BO.length);
+          mainView.innerHTML += `
+          <div style="margin-bottom:20px">${[
+            ["Population"],
+            ["Temps"],
+            ["Description"],
+          ].join(" ")}</div>
+        `;
+          for (let j = 0; j < dataJSON[i].BO.length; j++) {
+            mainView.innerHTML += `
+            <div>${dataJSON[i].BO[j].join(" ... ")}</div>
+          `;
+          }
         }
+        // <div>${dataJSON[i].BO}</div>
       }
 
       // console.log(dataJSON.includes(element.id));
