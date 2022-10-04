@@ -4,4 +4,60 @@ footer {
   background: $gradient1;
   position: fixed;
   bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .cadre{
+    margin: 0 20px; 
+    padding: 5px 20px ;
+    background: rgb(72, 72, 72);
+    border-radius: 6px;
+    h1{
+
+      color:#f44;
+      font-family: Calibri;
+    }
+  }
+
+  .button-b{
+    background: none;
+    border: none;
+    margin: 0 20px;
+    
+    i{font-size: 48px; color: wheat}
+
+    &:hover i{
+      font-size: 48px; color: #09c
+    }
+
+    &:active i {
+
+      transform: translateY(4px);
+  }
+  }
+
+  progress {
+    margin: 0 20px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 400px;
+    height: 22px;
+    box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );
+
+    &::-webkit-progress-value {
+      background-image:
+         -webkit-linear-gradient(-45deg, 
+                                 transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                                 rgba(0,0, 0, .1) 66%, transparent 66%),
+         -webkit-linear-gradient(top, 
+                                 rgba(255, 255, 255, .25), 
+                                 rgba(0, 0, 0, .25)),
+         -webkit-linear-gradient(left, #09c, #f44);
+    
+        border-radius: 2px; 
+        background-size: 35px 20px, 100% 100%, 100% 100%;
+  }
+  }
+
 }
