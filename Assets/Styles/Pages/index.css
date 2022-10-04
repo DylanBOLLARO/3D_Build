@@ -6,12 +6,12 @@
 body {
   background: black;
   height: 100vh;
-  min-height: 350px;
+  width: 100vw;
   overflow: hidden;
 }
 
 header {
-  background: #222;
+  background: radial-gradient(#2C3E50, #000000);
   padding: 5px 15px;
   display: flex;
   justify-content: space-between;
@@ -75,42 +75,65 @@ header .right #login {
 
 .app {
   height: calc(100vh - 125px);
-  width: 100%;
-  display: grid;
-  grid-template-columns: 15% 85%;
+  display: flex;
 }
 .app .select {
   background: #222;
+  min-width: 160px;
   height: auto;
   margin: 5px;
   border-radius: 10px;
 }
 .app .select .buildList .card {
-  height: 50px;
-  width: 90%;
-  background: rgba(245, 245, 245, 0.393);
-  margin: 5px;
+  height: 40px;
+  background: radial-gradient(#2C3E50, #000000);
+  margin: 10px 5px;
   border-radius: 6px;
   text-align: left;
-  padding-left: 5px;
+  padding: 5px;
   transition: 0.3s;
+  color: whitesmoke;
+  opacity: 0.6;
+  font-family: Calibri;
+  font-family: Calibri;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
 }
 .app .select .buildList .card:hover {
-  background: antiquewhite;
+  opacity: 1;
+  color: wheat;
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
 }
 .app .mainView {
   background: #222;
   height: auto;
   margin: 5px;
+  width: 100%;
   border-radius: 10px;
   color: wheat;
   padding: 20px;
+  overflow-y: scroll;
+  /* Global */
+  /* Ascenseur */
+}
+.app .mainView::-webkit-scrollbar {
+  width: 8px;
+  height: 50px;
+}
+.app .mainView::-webkit-scrollbar-thumb {
+  background: rgb(176, 156, 122);
+  border-radius: 4px;
+  border-top: 1px white solid;
+}
+.app .mainView h1, .app .mainView p {
+  font-family: Calibri;
 }
 
 footer {
   height: 75px;
   width: 100%;
-  background-color: #222;
+  background: radial-gradient(#2C3E50, #000000);
   position: fixed;
   bottom: 0px;
 }/*# sourceMappingURL=index.css.map */

@@ -1,28 +1,37 @@
 .app {
   height: calc(100vh - 125px);
-  width: 100%;
-  display: grid;
-  grid-template-columns: 15% 85%;
+  display: flex;
 
   .select {
     background: #222;
+    min-width: 160px;
     height: auto;
     margin: 5px;
     border-radius: 10px;
 
     .buildList {
+
       .card {
-        height: 50px;
-        width: 90%;
-        background: rgba(245, 245, 245, 0.393);
-        margin: 5px;
+        height: 40px;
+        background: $gradient1;
+        margin: 10px 5px ;
         border-radius: 6px;
         text-align: left;
-        padding-left: 5px;
+        padding: 5px;
         transition: 0.3s;
+        color:  whitesmoke;
+        opacity: .6;
+        font-family: Calibri;
+        font-family: Calibri;
+        filter: grayscale(1);
+        -webkit-filter: grayscale(1);
+
 
         &:hover {
-          background: antiquewhite;
+          opacity: 1;
+          color:  $color3;            
+          filter: grayscale(0);
+          -webkit-filter: grayscale(0);
         }
       }
     }
@@ -32,8 +41,27 @@
     background: #222;
     height: auto;
     margin: 5px;
+    width: 100%;
     border-radius: 10px;
     color: wheat;
     padding: 20px;
+    overflow-y: scroll;
+
+      /* Global */
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 50px;
+  }
+
+  /* Ascenseur */
+  &::-webkit-scrollbar-thumb {
+    background: rgb(176, 156, 122);
+    border-radius: 4px;
+    border-top: 1px white solid;
+  }
+
+    h1,p{
+      font-family: Calibri;
+    }
   }
 }

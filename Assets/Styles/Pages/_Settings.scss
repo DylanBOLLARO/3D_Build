@@ -1,3 +1,10 @@
+$color1: whitesmoke;
+$color2:rgb(154, 154, 154);
+$color3:wheat;
+
+$gradient1:radial-gradient(#2C3E50,#000000);
+
+
 * {
   padding: 0;
   margin: 0;
@@ -5,6 +12,7 @@
 body {
   background: black;
   height: 100vh;
-  min-height: 350px;
+  width: 100vw;
   overflow: hidden;
 }
+

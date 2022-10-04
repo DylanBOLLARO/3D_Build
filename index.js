@@ -35,15 +35,15 @@ async function getBuildOrderJSON() {
                               `;
           // console.log(dataJSON[i].BO.length);
           mainView.innerHTML += `
-          <div style="margin-bottom:20px">${[
+          <p style="margin-bottom:20px">${[
             ["Population"],
             ["Temps"],
             ["Description"],
-          ].join(" ")}</div>
+          ].join(" ")}</p>
         `;
           for (let j = 0; j < dataJSON[i].BO.length; j++) {
             mainView.innerHTML += `
-            <div>${dataJSON[i].BO[j].join(" ... ")}</div>
+            <p>${dataJSON[i].BO[j].join(" ... ")}</p>
           `;
           }
         }
