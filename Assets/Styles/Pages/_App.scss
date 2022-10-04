@@ -4,6 +4,8 @@
 
   .select {
     background: #222;
+    max-width: 300px;
+    width: 100%;
     min-width: 160px;
     height: auto;
     margin: 5px;
@@ -20,18 +22,17 @@
         padding: 5px;
         transition: 0.3s;
         color:  whitesmoke;
-        opacity: .6;
         font-family: Calibri;
-        font-family: Calibri;
-        filter: grayscale(1);
-        -webkit-filter: grayscale(1);
 
 
         &:hover {
-          opacity: 1;
-          color:  $color3;            
-          filter: grayscale(0);
-          -webkit-filter: grayscale(0);
+          color:  wheat;
+          box-shadow: 5px 0px wheat,-5px 0px wheat
+
+        }
+        p{
+          transform: translateY(50%); /* tiré de la moitié de sa propre hauteur */
+          padding-left: 8px;
         }
       }
     }
@@ -42,26 +43,70 @@
     height: auto;
     margin: 5px;
     width: 100%;
+    min-width: 500px;
     border-radius: 10px;
     color: wheat;
     padding: 20px;
     overflow-y: scroll;
 
-      /* Global */
-  &::-webkit-scrollbar {
-    width: 8px;
-    height: 50px;
-  }
+        /* Global */
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 50px;
+    }
 
-  /* Ascenseur */
-  &::-webkit-scrollbar-thumb {
-    background: rgb(176, 156, 122);
-    border-radius: 4px;
-    border-top: 1px white solid;
-  }
+    /* Ascenseur */
+    &::-webkit-scrollbar-thumb {
+      background: rgb(176, 156, 122);
+      border-radius: 4px;
+      border-top: 1px white solid;
+    }
 
-    h1,p{
+    h1,h2,p{
       font-family: Calibri;
+    }
+
+    .card-name-bo{
+      background: rgb(128, 128, 128);
+      border-radius: 5px;
+      padding: 0 5px;
+    }
+
+    .toto{
+      margin-right: 20px;
+    }
+
+    /* espacement */
+
+    table {
+      table-layout: fixed;
+      width: 100%;
+      border-collapse: collapse;
+      border: 0px solid grey;
+      font-family: Calibri;
+    }
+
+    thead th:nth-child(1) {
+      width: 10%;
+    }
+
+    thead th:nth-child(2) {
+      width: 10%;
+    }
+
+    thead th:nth-child(3) {
+      width: 30%;
+    }
+
+    thead th:nth-child(4) {
+      width: 50%;
+    }
+
+    th, td {
+      padding: 20px;
+      border: 1px solid grey;
+      border-left: 1px solid black;
+      border-right: 1px solid black;
     }
   }
 }
