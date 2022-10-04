@@ -1,9 +1,8 @@
 $color1: whitesmoke;
-$color2:rgb(154, 154, 154);
-$color3:wheat;
+$color2: rgb(154, 154, 154);
+$color3: wheat;
 
-$gradient1:radial-gradient(#2C3E50,#000000);
-
+$gradient1: radial-gradient(#2c3e50, #000000);
 
 * {
   padding: 0;
@@ -16,9 +15,8 @@ body {
   // overflow: hidden;
 }
 
-
-.btn-b{
-  width: 50px;
+.btn-b {
+  width: 100px;
   height: 50px;
   border-radius: 50px;
   border: 1px solid #f5deb3;

@@ -7,6 +7,7 @@ const mainView = document.querySelector(".mainView");
 
 let cardSelect = [];
 let dataJSON = [];
+let volumeMuted = true;
 
 async function getBuildOrderJSON() {
   //Fetch du JSON => dataJSON[] (1 obj = 1 BO)
@@ -79,4 +80,25 @@ getBuildOrderJSON();
 
 home.addEventListener("click", () => {
   mainView.innerHTML = ``;
+});
+
+const aze = document.getElementById("btnDeVolumeCouleur");
+
+console.log(aze);
+
+btnVolume.addEventListener("click", () => {
+  if (volumeMuted == true) {
+    btnVolume.innerHTML = `<div id"btnDeVolumeCouleur">
+                            <i class="fa-solid fa-volume-xmark"></i>    
+                          </div>`;
+
+    btnVolume.style.color = "green";
+    volumeMuted = false;
+  } else {
+    btnVolume.innerHTML = `<div id"btnDeVolumeCouleur">
+                            <i class="fa-solid fa-volume-off"></i>
+                          </div>`;
+    aze.style.color = "yellow";
+    volumeMuted = true;
+  }
 });
