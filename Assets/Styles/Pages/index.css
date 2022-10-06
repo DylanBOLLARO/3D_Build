@@ -1,0 +1,283 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: black;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+.btnFontWwesome {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #f5deb3;
+  margin: 0 5px;
+  background: #222;
+  transition: 0.1s;
+  color: #c2c2c2;
+}
+.btnFontWwesome:active {
+  transform: scale(1.1);
+}
+
+header {
+  background: radial-gradient(#2c3e50, #000000);
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: auto;
+}
+header .search {
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #f5deb3;
+  background: transparent;
+  padding-left: 10px;
+  color: #f5deb3;
+}
+header .left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .midle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app {
+  height: calc(100vh - 120px);
+  display: flex;
+  gap: 5px;
+}
+.app .select {
+  background: #222;
+  max-width: 300px;
+  width: 100%;
+  min-width: 160px;
+  height: auto;
+  padding: 10px;
+  border-radius: 0 4px 4px 0;
+}
+.app .select .buildList .card {
+  height: 40px;
+  background: radial-gradient(#2c3e50, #000000);
+  margin: 10px 5px;
+  border-radius: 6px;
+  text-align: left;
+  padding: 5px;
+  transition: 0.3s;
+  color: whitesmoke;
+  font-family: Calibri;
+}
+.app .select .buildList .card:hover {
+  color: wheat;
+  box-shadow: 5px 0px wheat, -5px 0px wheat;
+}
+.app .select .buildList .card p {
+  transform: translateY(50%); /* tiré de la moitié de sa propre hauteur */
+  padding-left: 8px;
+}
+.app .mainView {
+  border-radius: 4px 0 0 4px;
+  background: #222;
+  height: auto;
+  width: 100%;
+  min-width: 500px;
+  color: wheat;
+  padding: 20px;
+  overflow-y: scroll;
+  /* Global */
+  /* Ascenseur */
+  /* espacement */
+}
+.app .mainView::-webkit-scrollbar {
+  width: 8px;
+  height: 50px;
+}
+.app .mainView::-webkit-scrollbar-thumb {
+  background: rgb(176, 156, 122);
+  border-radius: 4px;
+  border-top: 1px white solid;
+}
+.app .mainView h1,
+.app .mainView h2,
+.app .mainView p {
+  font-family: Calibri;
+}
+.app .mainView .card-name-bo {
+  background: rgb(128, 128, 128);
+  border-radius: 5px;
+  padding: 0 5px;
+}
+.app .mainView .toto {
+  margin-right: 20px;
+}
+.app .mainView table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 0px solid grey;
+  font-family: Calibri;
+}
+.app .mainView thead th:nth-child(1) {
+  width: 10%;
+}
+.app .mainView thead th:nth-child(2) {
+  width: 10%;
+}
+.app .mainView thead th:nth-child(3) {
+  width: 30%;
+}
+.app .mainView thead th:nth-child(4) {
+  width: 50%;
+}
+.app .mainView th,
+.app .mainView td {
+  padding: 20px;
+  border: 1px solid grey;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+footer {
+  height: 60px;
+  width: 100%;
+  background: radial-gradient(#2c3e50, #000000);
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .nameOfBuild {
+  position: absolute;
+  color: #c2c2c2;
+  font-family: Calibri;
+  font-size: 1rem;
+  padding-left: 20px;
+}
+footer .setting {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer .setting .cadre,
+footer .setting .annonce {
+  margin: 0 20px;
+  padding: 0 30px;
+  border-radius: 5px;
+  border: 1px solid #f5deb3;
+  background: #222;
+}
+footer .setting .cadre h1,
+footer .setting .cadre .timerAnnonce,
+footer .setting .annonce h1,
+footer .setting .annonce .timerAnnonce {
+  color: #c2c2c2;
+  font-family: Calibri;
+}
+footer .setting .cadre p,
+footer .setting .annonce p {
+  margin: auto;
+  padding-right: 20px;
+}
+footer .setting .annonce {
+  display: flex;
+  color: #c2c2c2;
+  font-family: Calibri;
+}
+footer .setting .button-b {
+  background: none;
+  border: none;
+  margin: 0 10px;
+  width: 75px;
+}
+footer .setting .button-b i {
+  font-size: 48px;
+  color: whitesmoke;
+}
+footer .setting .button-b:hover i {
+  font-size: 48px;
+  color: #09c;
+}
+footer .setting .button-b:active i {
+  transform: translateY(4px);
+}
+footer .setting progress {
+  margin: 0 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 400px;
+  height: 22px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+footer .setting progress::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), -webkit-linear-gradient(left, #09c, #f44);
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+.popupMaster {
+  visibility: hidden;
+  margin: auto;
+  position: absolute;
+  height: 200px;
+  width: 800px;
+  background: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.popupMaster h1 {
+  padding-top: 25px;
+  text-align: center;
+  font-family: Calibri;
+  font-size: 1.8rem;
+}
+.popupMaster .btnOfPopupMaster {
+  background-color: red;
+  bottom: 0;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+}
+.popupMaster .btnOfPopupMaster input {
+  all: unset;
+  outline: 0px;
+  height: 100%;
+  width: 50%;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 3rem;
+  font-family: Calibri;
+  text-align: center;
+}
+.popupMaster .btnOfPopupMaster .btnYes {
+  background: rgb(255, 87, 87);
+  border-radius: 0 0 0 10px;
+}
+.popupMaster .btnOfPopupMaster .btnNo {
+  background: rgb(83, 137, 255);
+  border-radius: 0 0 10px 0;
+}/*# sourceMappingURL=index.css.map */

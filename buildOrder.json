@@ -1,0 +1,45 @@
+[
+    {
+        "Name": "Battlecruiser & Hellion",
+        "Description": "This Hellion and Battlecruiser build is the most popular build in TvZ now. The combination of Battlecruisers and Hellions is very popular in the match up now. The build can transition to either mech or bio, but mech is the more common option of the two.",
+        "Suite": "Attaquer avec le BC et les hellions, rajouter des usines, faire des unités en continu.",
+        "BO":   [[[14],[17],["Supply Depot"],[""]]
+                ,[[15],[41],["Barracks"],[""]]
+                ,[[16],[45],["Refinery"],[""]]
+                ,[[19],[87],["Orbital Command"],[""]]
+                ,[[19],["1:29"],["Reaper"],[""]]
+                ,[[20],["1:41"],["Command Center"],[""]]
+                ,[[21],["1:55"],["Supply Depot"],[""]]
+                ,[[21],["2:01"],["Marine"],[""]]
+                ,[[23],["2:09"],["Factory"],[""]]
+                ,[[23],["2:14"],["Refinery"],[""]]
+                ,[[24],["2:23"],["Barracks Reactor"],[""]]
+                ,[[26],["2:53"],["Starport"],[""]]
+                ,[[26],["2:54"],["Orbital Command"],[""]]
+                ,[[29],["3:06"],["Hellion x2"],[""]]
+                ,[[29],["3:10"],["Supply Depot"],[""]]
+                ,[[36],["3:27"],["Hellion x2"],[""]]
+                ,[[36],["3:31"],["Fusion Core"],[""]]
+                ,[[40],["3:43"],["Starport Tech Lab"],[""]]
+                ,[[40],["3:50"],["Command Center"],[""]]
+                ,[[42],["4:00"],["Hellion x2"],[""]]
+                ,[[46],["4:04"],["Supply Depot"],[""]]
+                ,[[48],["4:23"],["Battlecruiser"],[""]]
+                ,[[56],["4:38"],["Refinery x2"],[""]]
+                ,[[56],["4:45"],["Supply Depot"],[""]]
+                ,[[58],["4:52"],["Hellion x2"],[""]]
+                ,[[62],["5:04"],["Orbital Command"],[""]]
+                ]
+    },
+    {   
+        "Name": "Proxy 3 RAX Reaper",
+        "BO": 18
+    },    {
+        "Name": "Fast 3 CC",
+        "BO": 18
+    }
+    ,    {
+        "Name": "2-1-1 Marine Drop",
+        "BO": 18
+    }
+]
