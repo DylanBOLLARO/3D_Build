@@ -35,7 +35,8 @@
     </div>
 
     <footer>
-      <div class="btn-C">
+      <div class="nameOfBuild"></div>
+      <div class="setting">
         <button id="btnReset" class="button-b" type="button">
           <i class="fa-solid fa-arrows-rotate"></i>
         </button>
@@ -45,18 +46,18 @@
         <button id="btnPause" class="button-b" type="button">
           <i class="fa-solid fa-pause"></i>
         </button>
-      </div>
-      <div class="cadre">
-        <h1 id="timer">00:00</h1>
-      </div>
-      <progress id="file" max="100" value="0"></progress>
-      <div class="btn-C">
-        <button id="btnVolume" class="button-b" type="button">
-          <i id="btnDeVolumeCouleur" class="fa-solid fa-volume-off"></i>
-        </button>
+        <div class="cadre">
+          <h1 id="timer">00:00</h1>
+        </div>
+        <progress id="file" max="100" value="0"></progress>
+        <div class="btn-C">
+          <button id="btnVolume" class="button-b" type="button">
+            <i id="btnDeVolumeCouleur" class="fa-solid fa-volume-off"></i>
+          </button>
+        </div>
       </div>
     </footer>
-    <script src="./index.js"></script>
-    <script src="./timer.js"></script>
+    <script type="module" src="./JavaScript/index.js"></script>
+    <script type="module" src="./JavaScript/timer.js"></script>
   </body>
 </html>
