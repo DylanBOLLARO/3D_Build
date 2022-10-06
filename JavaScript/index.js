@@ -103,3 +103,7 @@ btnVolume.addEventListener("click", () => {
     volumeMuted = true;
   }
 });
+
+document.querySelector(".popupMaster").addEventListener("click", () => {
+  document.querySelector(".popupMaster").style.visibility = "hidden";
+});

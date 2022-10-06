@@ -45,7 +45,7 @@ btnPlay.addEventListener("click", function () {
   // console.log(varNameOfBuild);
 
   if (ms == null) {
-    alert("Choisir un build order");
+    document.querySelector(".popupMaster").style.visibility = "visible";
   } else {
     if (isStart === false) {
       isStart = true;
