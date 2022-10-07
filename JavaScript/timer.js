@@ -13,7 +13,24 @@ let intervalID, //Variable global qui recevra l'id de l'interval
   nbSpeak = 0,
   second = 1;
 
-var audio = new Audio("JavaScript/5.mp3");
+const ring = (key) => {
+  const audio = new Audio();
+  audio.src = "../Assets/Audio/" + key + ".mp3";
+  audio.play();
+};
+
+export function secondDisplay(nombreDeSeconde) {
+  let NBminute, NBseconde;
+
+  NBminute = parseInt(nombreDeSeconde / 60, 10);
+  NBseconde = parseInt(nombreDeSeconde % 60, 10);
+
+  NBminute = NBminute < 10 ? "0" + NBminute : NBminute;
+  NBseconde = NBseconde < 10 ? "0" + NBseconde : NBseconde;
+
+  return `${NBminute}:${NBseconde}`;
+}
+
 const action_ival = function () {
   // console.log(dataJSON[ms].BO[nbSpeak][1]);
 
@@ -24,7 +41,7 @@ const action_ival = function () {
     console.log("play song ");
     nbSpeak++;
 
-    audio.play();
+    ring(nbSpeak);
   }
 
   minutes = parseInt(second / 60, 10);
@@ -50,13 +67,25 @@ const chrono = function (act) {
   }
 };
 
-btnPlay.addEventListener("click", function () {
-  // console.log(dataJSON);
-  if (ms == null) {
+export function popup(state, message, yes, no) {
+  if (state == true) {
     document.querySelector(".popupMaster").style.visibility = "visible";
-    document.querySelector(
-      ".popupMaster h1"
-    ).innerHTML = `Vous devez choisir un build order avant de pouvoir l'écouter`;
+  } else {
+    document.querySelector(".popupMaster").style.visibility = "hidden";
+  }
+  document.querySelector(".popupMaster h1").innerHTML = `${message}`;
+  document.querySelector(".btnYes").value = `${yes}`;
+  document.querySelector(".btnNo").value = `${no}`;
+}
+
+btnPlay.addEventListener("click", function () {
+  if (ms == null) {
+    popup(
+      true,
+      "Vous devez choisir un build order avant de pouvoir l'écouter",
+      "yes",
+      "no"
+    );
   } else {
     if (isStart === false) {
       isStart = true;

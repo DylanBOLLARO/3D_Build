@@ -6,6 +6,9 @@ let cardSelect = [];
 export let dataJSON = [];
 let volumeMuted = true;
 
+import { popup } from "./timer.js";
+import { secondDisplay } from "./timer.js";
+
 export let ms;
 
 async function getBuildOrderJSON() {
@@ -30,7 +33,7 @@ async function getBuildOrderJSON() {
     element.addEventListener("click", () => {
       for (let i = 0; i < dataJSON.length; i++) {
         if (element.id === dataJSON[i].Name) {
-          console.log(dataJSON[i].Name);
+          // console.log(dataJSON[i].Name);
           nameOfBuild.innerHTML = `${element.id}`;
           ms = i;
           mainView.innerHTML = `<div class="card-name-bo">
@@ -61,10 +64,18 @@ async function getBuildOrderJSON() {
 
           for (let j = 0; j < dataJSON[i].BO.length; j++) {
             inject.innerHTML += `<tr  style="color:grey">
-                                    <th style="padding: 5px 20px" scope="col">${dataJSON[i].BO[j][0]}</th>
-                                    <th style="padding: 5px 20px" scope="col">${dataJSON[i].BO[j][1]}</th>
-                                    <th style="padding: 5px 20px;text-align:left" scope="col">${dataJSON[i].BO[j][2]}</th>
-                                    <th style="padding: 5px 20px"scope="col">${dataJSON[i].BO[j][3]}</th>
+                                    <th style="padding: 5px 20px" scope="col">${
+                                      dataJSON[i].BO[j][0]
+                                    }</th>
+                                    <th style="padding: 5px 20px" scope="col">${secondDisplay(
+                                      dataJSON[i].BO[j][1]
+                                    )}</th>
+                                    <th style="padding: 5px 20px;text-align:left" scope="col">${
+                                      dataJSON[i].BO[j][2]
+                                    }</th>
+                                    <th style="padding: 5px 20px"scope="col">${
+                                      dataJSON[i].BO[j][3]
+                                    }</th>
                                   </tr>`;
           }
 
@@ -104,6 +115,9 @@ btnVolume.addEventListener("click", () => {
   }
 });
 
-document.querySelector(".popupMaster").addEventListener("click", () => {
-  document.querySelector(".popupMaster").style.visibility = "hidden";
+document.querySelector(".btnYes").addEventListener("click", () => {
+  popup(false);
+});
+document.querySelector(".btnNo").addEventListener("click", () => {
+  popup(false);
 });
